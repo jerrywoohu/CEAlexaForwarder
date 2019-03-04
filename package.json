@@ -1,0 +1,32 @@
+{
+  "name": "alexa-openwhisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run unit && npm run eslint",
+    "eslint": "eslint *.js test",
+    "unit": "istanbul cover _mocha test/unit -- -R spec"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "repository": "github:IBM/alexa-skill-watson-conversation",
+  "dependencies": {
+    "alexa-verifier": "^2.0.1",
+    "watson-developer-cloud": "^3.18.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.4",
+    "rewire": "^4.0.1",
+    "sinon": "^7.2.6",
+    "sinon-test": "^2.4.0"
+  }
+}
